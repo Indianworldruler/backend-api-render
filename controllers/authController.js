@@ -1,6 +1,8 @@
 import User from "../schema/User.js";
 import jwt from "jsonwebtoken";
-import { filterNewsByPreferences, cleanNewsData, removeDuplicates } from "newsflow-utils";
+import pkg from "newsflow-utils";
+const { filterNewsByPreferences, cleanNewsData, removeDuplicates } = pkg;
+
 
 
 // Signup
