@@ -1,6 +1,8 @@
 import axios from "axios";
 import User from "../schema/User.js";
-import { filterNewsByPreferences, cleanNewsData, removeDuplicates } from "newsflow-utils";
+import pkg from "newsflow-utils";
+const { filterNewsByPreferences, cleanNewsData, removeDuplicates } = pkg;
+
 
 
 export const getNews = async (req, res) => {
